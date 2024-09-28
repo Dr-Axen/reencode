@@ -24,7 +24,7 @@ for i in *.avi; do reencode.sh -i $i; done
 ```
 Reencode 1080p H264 to HEVC scaling down to 720p
 ```
-ls *.mkv | while read i; do echo reencode.sh -i "'"$i"'" -o "'"$(echo $i | sed 's/1080p/720p/' | sed 's/x264/HEVC/')"'" -s 720; done
+ls *.mkv | while read i; do eval reencode.sh -i "'"$i"'" -o "'"$(echo $i | sed 's/1080p/720p/' | sed 's/x264/HEVC/')"'" -s 720; done
 ```
 
 
