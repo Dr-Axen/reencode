@@ -2,7 +2,6 @@
 ########################################
 # This script reencodes video 
 # to x264 or x265 and optionally scales it 
-# then runs query defined in query.txt #
 # usage:
 # for i in *.avi; do reencode.sh $i; done
 # scaling:
